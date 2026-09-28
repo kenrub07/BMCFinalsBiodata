@@ -43,7 +43,6 @@ class BiodataScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // ✅ PURONG LITRATO MO NA LANG — WALANG NAKAHARANG
                 Center(
                   child: Container(
                     width: 120,
@@ -61,14 +60,13 @@ class BiodataScreen extends StatelessWidget {
                       ],
                       image: DecorationImage(
                         image: AssetImage('assets/romar_photo.jpg'),
-                        fit: BoxFit.cover, // Sakto sa bilog — buong mukha mo
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 25),
 
-                // PERSONAL INFORMATION
                 _buildHeading('PERSONAL INFORMATION'),
                 const Divider(thickness: 2),
                 _buildInfoRow('Full Name', 'Bernabe, Romar Q.'),
